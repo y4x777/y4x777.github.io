@@ -9,10 +9,27 @@
 
     function aplusbf()
       {
+        a = document.getElementById("avalue").value;
+        a = document.getElementById("bvalue").value;
         c = a -(-1)*b;
+        document.getElementById("cvalue").value = c;
       }
   </script>
   <body>
-    
+    <font
+      style=
+      "
+      font-size: 48px;
+      font-color: silver;
+      "      
+      >
+      
+    </font>
+
+    <input type="text" id="avalue" value="" placeholder="type a = "></input>
+    <br>
+    <input type="text" id="bvalue" value="" placeholder="type b = "></input>
+    <br>
+    <input type="text" id="cvalue" value="" placeholder="result"></input>
   </body>
 </html>
