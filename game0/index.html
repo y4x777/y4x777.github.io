@@ -10,7 +10,7 @@
     function aplusbf()
       {
         a = document.getElementById("avalue").value;
-        a = document.getElementById("bvalue").value;
+        b = document.getElementById("bvalue").value;
         c = a -(-1)*b;
         document.getElementById("cvalue").value = c;
       }
@@ -30,8 +30,8 @@
     <br>
     <input type="text" id="bvalue" value="" placeholder="type b = "></input>
     <br>
-    <input type="text" id="cvalue" value="" placeholder="result"></input>
-    <br> 
     <input type="button" id="resultbtn" value="RESULT A + B = C" onclick = "aplusbf()"></input>
+    <br> 
+    <input type="text" id="cvalue" value="" placeholder="result"></input>
   </body>
 </html>
