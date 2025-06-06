@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator 2024.dec.04</title>
+    <script src="js/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div>
+
+  
+
+
+    <h1>
+        <font
+        style="
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+        "
+        >
+            QR-код генератор
+        </font>
+    </h1>
+
+
+    <input 
+    type="text" 
+    id="url" 
+    placeholder="Введите URL-адрес" 
+    size="70"    
+    style="
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    "
+    onclick="clearUrlf()"
+    >
+
+    <button 
+    onclick="generateQRCode()"
+    style="
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    "
+    >
+    Сгенерировать QR-код
+</button>
+<br>
+
+
+    <div id="qrcode" style="width: 500px; height: 500px; position: absolute; top: 20%; left: 5%;"></div>
+    <!--
+        <button onclick="downloadQRCode()" style="display:none;" id="download-btn">Скачать QR-код</button>
+    -->
+    <div style="position: absolute; top: 20%; left: 40%;">
+        <font
+        style="
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        "
+        >
+            Инструкция: 
+            <br>
+            вставь ссылку на сайт в поле "Введите URL-адрес"
+            <br>
+            нажми кнопку "Сгенерировать QR-код"
+            <br>
+            <--В левой части экрана появится QR-код
+            <br>
+            Наведи мышь на QR-код
+            <br>
+            Нажми правой кнопкой мыши 
+            <br>
+            и выбери пункт 
+            <br>
+            "Сохранить картинку как..."
+            <br>
+            <hr>
+
+        </font>
+        <img src="img/help.png"/>
+    </div>
+<br>
+    <button 
+    hidden
+    onclick="document.location.reload();"
+    style="
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    "
+    >Обновить страницу</button>
+
+</div>
+
+    <script>
+        let updLock = false;
+        //let password = "di12si27uv80";
+        //let userpas = "";
+
+        /*function securityf()
+        {
+            userpas = prompt("Введите пароль:",'');
+            if (password == userpas)
+            {}
+            else {}
+        }*/
+
+
+        function generateQRCode() {
+            if (!updLock)
+              {
+            const url = document.getElementById('url').value;
+            if (!url) return alert('Пожалуйста, введите URL-адрес');
+
+            const qrcode = new QRCode(document.getElementById('qrcode'), {
+                text: url,
+                width: 400,
+                height: 400,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+            updLock = true;
+               }
+               else {document.location.reload();}
+    //document.getElementById('download-btn').style.display = 'block';
+        }
+
+        function downloadQRCode() {
+            const qrcode = document.getElementById('qrcode').children;
+            const a = document.createElement('a');
+            a.href = qrcode.src;
+            a.download = 'qrcode.png';
+            a.click();
+            document.getElementById('download-btn').style.display = 'none';
+        }
+
+        function clearUrlf()
+        {
+            document.location.reload();
+            document.getElementById("url").value="";
+        }
+    </script>
+</body>
+</html>
