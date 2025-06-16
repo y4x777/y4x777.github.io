@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопрос 2</title>
+    <script src="js/q1Script.js"></script>
+    <style>
+         .buttongl{
+            border-radius: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 100px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 140, 0);
+        }
+        @keyframes glowing{
+    0% {background-color: #2ba805; box-shadow: 0 0 5px #2ba805;}
+    50% {background-color: #49e819; box-shadow: 0 0 20px #49e819;}
+    100% {background-color: #2ba805; box-shadow: 0 0 5px #2ba805;}
+        }
+        .buttongl {
+            animation: glowing 1300ms infinite;        
+        }
+
+
+    .scale {
+     transition: 1s; /* Время эффекта */
+    }
+    .scale:hover {
+     transform: scale(1.5); /* Увеличиваем масштаб */
+    }
+    </style>
+</head>
+<body background="img/fon.jpg">
+
+    <div style="height: 50px;"></div>
+    <div style="
+    background-color: antiquewhite;             
+    position: absolute;
+    left: 10%;">
+        <center>
+            <font
+            style="
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 48px;
+            "
+            >
+                2.	Выберите автора самого известного прижизненного портрета М.Ю.Лермонтова?
+            </font>
+        </center>        
+    </div>
+
+ 
+    <div style="
+    position: absolute;
+    left: 10%;
+    top: 20%;">
+
+<table>
+    <td rowspan="3">
+        <!--begin answer button icon-->            
+        <img 
+        id = "mainImage"             
+        style="
+        zoom: 35%;
+        border-radius: 50px;                       
+        " 
+        src="img/0000.jpg"
+        class="scale"
+        />
+        <!--end answer button icon-->                                  
+    </td>
+
+    <td rowspan="3"><div style="width: 190px;"></div></td>
+
+
+
+    <td>
+        
+        
+                        <!--begin answer button icon-->            
+                        <img 
+                        id = "img0"             
+                        style="
+                        zoom: 28%;
+                        border-radius: 50px;                       
+
+                        " 
+                        src="img/zabolotskiy.jpg"
+                        class="scale"
+                        />
+                        <!--end answer button icon-->  
+    </td>
+
+
+<!--begin spacer--><td><div style="width: 10px;"></div></td><!--end spacer-->
+
+
+                            <td>
+                                <div id="divAns0">
+
+
+                                    <!--begin answer button-->
+                                    <input 
+                                    type="button" 
+                                    id = "button0" 
+                                    onclick="button0clf()" 
+                                    title="" 
+                                    value="П.Е. Заболотский"
+                                    style="
+                                    zoom: 100%;
+                                    border-radius: 20px;  
+                                    font-size: 55px;  
+                                    width: 600px;
+                                    height: 100px;
+                                    " 
+                                    class="scale"
+                                    > 
+                                    <!--end answer button-->
+
+                                </div>  
+                                
+                                
+
+                        <!--this is answer image-->            
+                        <img 
+                        id = "ansImg0" 
+                        hidden
+                        style="
+                        zoom: 25%;
+                        border-radius: 50px; 
+                        position: absolute;
+                        top: 640px;
+                        left: 3650px;
+                        " 
+                        src="img/true.png"
+                        class="scale"
+                        /> 
+
+
+                            </td>
+
+
+
+
+
+<tr>
+
+
+
+
+
+    <td>
+        
+        <!--begin answer button icon-->            
+        <img 
+        id = "img1"             
+        style="
+        zoom: 45%;
+        border-radius: 50px; 
+
+        " 
+        src="img/rokotov.jpg"
+        class="scale"
+        />
+        <!--end answer button icon-->  
+</td>
+
+<!--begin spacer--><td><div style="width: 10px;"></div></td><!--end spacer-->
+
+    <td>
+        <div id="divAns1">
+            <input 
+            type="button" 
+            id = "button1" 
+            onclick="button1clf()" 
+            title="" 
+            value="Ф.С. Рокотов"
+            style="
+            zoom: 100%;
+            border-radius: 20px;  
+            font-size: 55px;  
+            width: 600px;
+            height: 100px;
+            " 
+            class="scale"
+            > 
+        </div>      
+
+                                <!--this is answer image-->            
+                                <img 
+                                id = "ansImg1" 
+                                hidden
+                                style="
+                                zoom: 25%;
+                                border-radius: 50px; 
+                                position: absolute;
+                                top: 1650px;
+                                left: 3650px;
+                                " 
+                                src="img/false.png"
+                                class="scale"
+                                /> 
+
+
+    </td>
+
+
+
+
+<tr>
+
+
+
+
+
+    <td>
+        
+        <!--begin answer button icon-->            
+        <img 
+        id = "img2"             
+        style="
+        zoom: 80%;
+        border-radius: 25px; 
+
+        " 
+        src="img/borovik.jpg"
+        class="scale"
+        />
+        <!--end answer button icon-->  
+</td>
+
+<!--begin spacer--><td><div style="width: 10px;"></div></td><!--end spacer-->
+
+    <td>
+        <div id="divAns2">
+            <input 
+            type="button" 
+            id = "button2" 
+            onclick="button2clf()" 
+            title="" 
+            value="В.Л. Боровиковский"
+            style="
+            zoom: 100%;
+            border-radius: 20px;  
+            font-size: 55px;  
+            width: 600px;
+            height: 100px;
+            " 
+            class="scale"
+            >   
+        </div>   
+
+
+
+                                <!--this is answer image-->            
+                                <img 
+                                id = "ansImg2" 
+                                hidden
+                                style="
+                                zoom: 25%;
+                                border-radius: 50px; 
+                                position: absolute;
+                                top: 2660px;
+                                left: 3650px;
+                                " 
+                                src="img/false.png"
+                                class="scale"
+                                /> 
+
+
+
+    </td>
+    
+</table>
+    </div>
+
+
+    <div
+    style="
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    "
+    >
+        <input 
+        hidden
+        class="buttongl"
+        type="button" 
+        id="nextButton" 
+        value = "Далее"         
+        onclick="nextButtonclf()"
+        />
+    </div>
+
+    
+
+    
+</body>
+</html>

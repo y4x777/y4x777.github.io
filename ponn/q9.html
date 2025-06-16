@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопрос 10</title>
+    <script src="js/q9Script.js"></script>
+    <style>
+         .buttongl{
+            border-radius: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 100px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 140, 0);
+        }
+        @keyframes glowing{
+    0% {background-color: #2ba805; box-shadow: 0 0 5px #2ba805;}
+    50% {background-color: #49e819; box-shadow: 0 0 20px #49e819;}
+    100% {background-color: #2ba805; box-shadow: 0 0 5px #2ba805;}
+        }
+        .buttongl {
+            animation: glowing 1300ms infinite;        
+        }
+
+
+
+
+    .scale {
+     transition: 1s; /* Время эффекта */
+    }
+    .scale:hover {
+     transform: scale(1.8); /* Увеличиваем масштаб */
+    }
+    </style>
+</head>
+<body background="img/fon.jpg">
+
+    <div style="height: 30px;"></div>
+    <div style="
+    background-color: antiquewhite;             
+    position: absolute;
+    left: 10%;">
+        <center>
+            <font
+            style="
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 48px;
+            "
+            >
+            10.	Каких еще поэтов и писателей изобразили художники Л.В. Худяков, Голышев, Шляпников? (Назовите не менее 5 имен)
+            </font>
+        </center>        
+    </div>
+
+ 
+    <div style="
+    position: absolute;
+    left: 5%;
+    top: 17%;
+    ">
+
+<table>
+
+    <td>
+        <img 
+        id = "imgg0" 
+        onclick="" 
+        title="" 
+        style="
+        zoom: 10%;
+        border-radius: 50px
+        " 
+        src="img/0010.jpg"
+        class="scale"
+        /> 
+    </td>
+
+
+
+
+
+
+
+
+
+    <td>
+        <div id="divAns0">
+            <img 
+            id = "img0" 
+            onclick="img0clf()" 
+            title="А.С. Пушкин" 
+            style="
+            zoom: 20%;
+            border-radius: 50px
+            " 
+            src="img/pushkin.jpg"
+            class="scale"
+            /> 
+
+
+
+
+                <!--Начало Подписи к портрету 0-->
+                <label 
+                style="            
+                background-color: black;
+                font-size: 16px; 
+                color: red;
+                position: absolute;
+                left: 530px;
+                top: 270px;
+                "
+                class="scale">
+                №1 – А.С.Пушкин
+                </label>
+                 <!--Конец Подписи к портрету 0-->
+                                     
+                        <!--Начало Подписи к портрету 0-->
+                        <label 
+                        style="            
+                        font-size: 72px; 
+                        color: red;
+                        position: absolute;
+                        left: 650px;
+                        top: -10px;
+                        ">
+                        I
+                        </label>
+                        <!--Конец Подписи к портрету 0-->             
+                                                    <!--индикатор ответа hidden-->                                                            
+                                                    <img 
+                                                    id = "ansImg0" 
+                                                    hidden
+                                                    style="
+                                                    zoom: 50%;
+                                                    border-radius: 50px; 
+                                                    position: absolute;
+                                                    top: 390px;
+                                                    left: 1130px;
+                                                    " 
+                                                    src="img/true.png"
+                                                    />
+                                                </div>      
+    </td>
+    <td>
+        <div id="divAns1">
+            <img 
+            id = "img1" 
+            onclick="img1clf()" 
+            title="Н.В. Гоголь" 
+            style="
+            zoom: 25%;
+            border-radius: 50px; 
+            " 
+            src="img/gogol.jpg"
+            class="scale"
+            /> 
+
+
+
+
+                            <!--Начало Подписи к портрету 1-->
+                            <label 
+                            style="            
+                            background-color: black;
+                            font-size: 16px; 
+                            color: red;
+                            position: absolute;
+                            left: 750px;
+                            top: 270px;
+                            "
+                            class="scale">
+                            №2 – Н.В. Гоголь
+                            </label>
+                             <!--Конец Подписи к портрету 1-->
+                                                 
+                                    <!--Начало Подписи к портрету 1-->
+                                    <label 
+                                    style="            
+                                    font-size: 72px; 
+                                    color: red;
+                                    position: absolute;
+                                    left: 830px;
+                                    top: -10px;
+
+                                    ">
+                                    II
+                                    </label>
+                                    <!--Конец Подписи к портрету 1-->      
+                                                            <!--индикатор ответа hidden-->                                                            
+                                                            <img 
+                                                            id = "ansImg1" 
+                                                            hidden
+                                                            style="
+                                                            zoom: 50%;
+                                                            border-radius: 50px; 
+                                                            position: absolute;
+                                                            top: 390px;
+                                                            left: 1560px;
+                                                            " 
+                                                            src="img/true.png"
+                                                            />
+                                                        </div>      
+    </td>
+    <td>
+        <div id="divAns2">
+            <img 
+            id = "img2" 
+            onclick="img2clf()" 
+            title="Л.Н. Толстой" 
+            style="
+            zoom: 63% ;
+            border-radius: 25px; 
+            " 
+            src="img/tolstoy.jpg"
+            class="scale"
+            />    
+
+
+
+
+                                        <!--Начало Подписи к портрету 2-->
+                                        <label 
+                                        style="            
+                                        background-color: black;
+                                        font-size: 16px; 
+                                        color: red;
+                                        position: absolute;
+                                        left: 950px;
+                                        top: 270px;
+                                        "
+                                        class="scale">
+                                        №3 – Л.Н. Толстой
+                                        </label>
+                                         <!--Конец Подписи к портрету 2-->
+                                                             
+                                                <!--Начало Подписи к портрету 2-->
+                                                <label 
+                                                style="            
+                                                font-size: 72px; 
+                                                color: red;
+                                                position: absolute;
+                                                left: 1030px;
+                                                top: -10px;
+                                                ">
+                                                III
+                                                </label>
+                                                <!--Конец Подписи к портрету 2-->   
+                                                            <!--индикатор ответа hidden-->                                                            
+                                                            <img 
+                                                            id = "ansImg2" 
+                                                            hidden
+                                                            style="
+                                                            zoom: 50%;
+                                                            border-radius: 50px; 
+                                                            position: absolute;
+                                                            top: 390px;
+                                                            left: 1950px;
+                                                            " 
+                                                            src="img/true.png"
+                                                            />
+                                                        </div>   
+    </td>
+    <td >
+        <div id="divAns3">
+            <img 
+            id = "img3" 
+            onclick="img3clf()" 
+            title="А.М.Горький" 
+            style="
+            zoom: 55%; 
+            border-radius: 25px;            
+            " 
+            src="img/gorkii.jpg"
+            class="scale"
+            />  
+
+
+
+
+
+                                                    <!--Начало Подписи к портрету 3-->
+                                                    <label 
+                                                    style="            
+                                                    background-color: black;
+                                                    font-size: 16px; 
+                                                    color: red;
+                                                    position: absolute;
+                                                    left: 1190px;
+                                                    top: 270px;
+                                                    "
+                                                    class="scale">
+                                                    №4 – А.М.Горький
+                                                    </label>
+                                                     <!--Конец Подписи к портрету 3-->
+                                                                         
+                                                            <!--Начало Подписи к портрету 3-->
+                                                            <label 
+                                                            style="            
+                                                            font-size: 72px; 
+                                                            color: red;
+                                                            position: absolute;
+                                                            left: 1280px;
+                                                            top: -10px;
+                                                            ">
+                                                            IV
+                                                            </label>
+                                                            <!--Конец Подписи к портрету 3-->   
+
+                                                            <!--индикатор ответа hidden-->                                                            
+                                                            <img 
+                                                            id = "ansImg3" 
+                                                            hidden
+                                                            style="
+                                                            zoom: 50%;
+                                                            border-radius: 50px; 
+                                                            position: absolute;
+                                                            top: 390px;
+                                                            left: 2390px;
+                                                            " 
+                                                            src="img/true.png"
+                                                            />
+                                                        </div>     
+    </td>
+    <tr>
+
+        <td>
+            <img 
+            id = "imgg0" 
+            onclick="" 
+            title="" 
+            style="
+            zoom: 10%;
+            border-radius: 50px
+            " 
+            src="img/0011.jpg"
+            class="scale"
+            /> 
+        </td>
+
+    <td>
+        <div id="divAns4">
+            <img 
+            id = "img4" 
+            onclick="img4clf()" 
+            title="С.А. Есенин" 
+            style="
+            zoom: 90%;
+            border-radius: 25px; 
+            " 
+            src="img/esenin.jpg"
+            class="scale"
+            /> 
+
+
+
+
+
+                                                                <!--Начало Подписи к портрету 4-->
+                                                                <label 
+                                                                style="            
+                                                                background-color: black;
+                                                                font-size: 16px; 
+                                                                color: red;
+                                                                position: absolute;
+                                                                left: 530px;
+                                                                top: 610px;
+                                                                "
+                                                                class="scale">
+                                                                №5 – С.А. Есенин
+                                                                </label>
+                                                                 <!--Конец Подписи к портрету 4-->
+                                                                                     
+                                                                        <!--Начало Подписи к портрету 4-->
+                                                                        <label 
+                                                                        style="            
+                                                                        font-size: 72px; 
+                                                                        color: red;
+                                                                        position: absolute;
+                                                                        left: 630px;
+                                                                        top: 300px;
+                                                                        ">
+                                                                        V
+                                                                        </label>
+                                                                        <!--Конец Подписи к портрету 4-->  
+         <!--индикатор ответа hidden-->                                                            
+         <img 
+         id = "ansImg4" 
+         hidden
+         style="
+         zoom: 50%;
+         border-radius: 50px; 
+         position: absolute;
+         top: 1110px;
+         left: 1130px;
+         " 
+         src="img/true.png"
+         />
+         </div>      
+    </td>
+    <td>
+        <div id="divAns5">
+            <img 
+            id = "img5" 
+            onclick="img5clf()" 
+            title="А.П. Чехов" 
+            style="
+            zoom: 90%;
+            border-radius: 10px; 
+            " 
+            src="img/chexov.jpg"
+            class="scale"
+            /> 
+
+
+
+
+                                                                            <!--Начало Подписи к портрету 5-->
+                                                                            <label 
+                                                                            style="            
+                                                                            background-color: black;
+                                                                            font-size: 16px; 
+                                                                            color: red;
+                                                                            position: absolute;
+                                                                            left: 750px;
+                                                                            top: 610px;
+                                                                            "
+                                                                            class="scale">
+                                                                            №6 – А.П. Чехов
+                                                                            </label>
+                                                                             <!--Конец Подписи к портрету 5-->
+                                                                                                 
+                                                                                    <!--Начало Подписи к портрету 5-->
+                                                                                    <label 
+                                                                                    style="            
+                                                                                    font-size: 72px; 
+                                                                                    color: red;
+                                                                                    position: absolute;
+                                                                                    left: 820px;
+                                                                                    top: 300px;
+                                                                                    ">
+                                                                                    VI
+                                                                                    </label>
+                                                                                    <!--Конец Подписи к портрету 5--> 
+                 <!--индикатор ответа hidden-->                                                            
+                 <img 
+                 id = "ansImg5" 
+                 hidden
+                 style="
+                 zoom: 50%;
+                 border-radius: 50px; 
+                 position: absolute;
+                 top: 1110px;
+                 left: 1580px;
+                 " 
+                 src="img/true.png"
+                 />
+                </div>      
+    </td>
+    <td>
+        <div id="divAns6">
+            <img 
+            id = "img6" 
+            onclick="img6clf()" 
+            title="В.В. Маяковский" 
+            style="
+            zoom: 75% ;
+            border-radius: 25px; 
+            " 
+            src="img/mayak.jpg"
+            class="scale"
+            />    
+
+
+
+
+
+                                                                                        <!--Начало Подписи к портрету 6-->
+                                                                                        <label 
+                                                                                        style="            
+                                                                                        background-color: black;
+                                                                                        font-size: 16px; 
+                                                                                        color: red;
+                                                                                        position: absolute;
+                                                                                        left: 940px;
+                                                                                        top: 610px;
+                                                                                        "
+                                                                                        class="scale">
+                                                                                        №7 – В.В. Маяковский
+                                                                                        </label>
+                                                                                         <!--Конец Подписи к портрету 6-->
+                                                                                                             
+                                                                                                <!--Начало Подписи к портрету 6-->
+                                                                                                <label 
+                                                                                                style="            
+                                                                                                font-size: 72px; 
+                                                                                                color: red;
+                                                                                                position: absolute;
+                                                                                                left: 1010px;
+                                                                                                top: 300px;
+                                                                                                ">
+                                                                                                VII
+                                                                                                </label>
+                                                                                                <!--Конец Подписи к портрету 6--> 
+                 <!--индикатор ответа hidden-->                                                            
+                 <img 
+                 id = "ansImg6" 
+                 hidden
+                 style="
+                 zoom: 50%;
+                 border-radius: 50px; 
+                 position: absolute;
+                 top: 1110px;
+                 left: 1980px;
+                 " 
+                 src="img/true.png"
+                 />
+                </div>   
+    </td>
+    <td >
+        <div id="divAns7">
+            <img 
+            id = "img7" 
+            onclick="img7clf()" 
+            title="Ф.М. Достоевский" 
+            style="
+            zoom: 45%; 
+            border-radius: 50px;            
+            " 
+            src="img/dos.jpg"
+            class="scale"
+            />  
+
+
+
+
+
+                <!--Начало Подписи к портрету 7-->
+                <label 
+                style="            
+                background-color: black;
+                font-size: 16px; 
+                color: red;
+                position: absolute;
+                left: 1190px;
+                top: 610px;
+                "
+                class="scale">
+                №8 – Ф.М. Достоевский
+                </label>
+                <!--Конец Подписи к портрету 7-->
+                                                                                                                         
+                <!--Начало Подписи к портрету 7-->
+                <label 
+                style="            
+                font-size: 72px; 
+                color: red;
+                position: absolute;
+                left: 1260px;
+                top: 300px;
+                ">
+                VIII
+                </label>
+                <!--Конец Подписи к портрету 7--> 
+
+                 <!--индикатор ответа hidden-->                                                            
+                 <img 
+                 id = "ansImg7" 
+                 hidden
+                 style="
+                 zoom: 50%;
+                 border-radius: 50px; 
+                 position: absolute;
+                 top: 1110px;
+                 left: 2410px;
+                 " 
+                 src="img/true.png"
+                 /></div>     
+    </td>
+
+</table>
+    </div>
+
+    <div style="position: absolute; left: 80%; top: 20%;">
+        <textarea    
+        id="txtareax" 
+        cols = "17" 
+        rows = "11" 
+        style="font-size: 36px;"
+        >
+</textarea>
+   </div>
+
+
+    <div
+    style="
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    "
+    >
+        <input 
+        hidden
+        class="buttongl"
+        type="button" 
+        id="nextButton" 
+        value = "Далее"         
+        onclick="nextButtonclf()"
+        />
+    </div>
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопрос 7</title>
+    <script src="js/q6Script.js"></script>
+    <style>
+         .buttongl{
+            border-radius: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 100px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 140, 0);
+        }
+        @keyframes glowing{
+    0% {background-color: #2ba805; box-shadow: 0 0 5px #2ba805;}
+    50% {background-color: #49e819; box-shadow: 0 0 20px #49e819;}
+    100% {background-color: #2ba805; box-shadow: 0 0 5px #2ba805;}
+        }
+        .buttongl {
+            animation: glowing 1300ms infinite;        
+        }
+
+
+    .scale {
+     transition: 1s; /* Время эффекта */
+    }
+    .scale:hover {
+     transform: scale(1.8); /* Увеличиваем масштаб */
+    }
+    </style>
+</head>
+<body background="img/fon.jpg">
+
+    <div style="height: 30px;"></div>
+    <div style="
+    background-color: antiquewhite;             
+    position: absolute;
+    left: 10%;">
+        <center>
+            <font
+            style="
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 48px;
+            "
+            >
+            7.	Назовите автора серии картин, посвященной лермонтовским местам?
+            </font>
+        </center>        
+    </div>
+
+ 
+    <div style="
+    position: absolute;
+    left: 15%;
+    top: 20%;">
+
+<table>
+    <td rowspan="4">
+        <!--begin answer button icon-->            
+        <img 
+        id = "mainImage"             
+        style="
+        zoom: 80%;
+        border-radius: 25px;                       
+        " 
+        src="img/0021.jpg"
+        class="scale"
+        />
+        <!--end answer button icon-->                                  
+<br>
+        <!--begin answer button icon-->            
+        <img 
+        id = "mainImage1"             
+        style="
+        zoom: 90%;
+        border-radius: 25px;                       
+        " 
+        src="img/0022.jpg"
+        class="scale"
+        />
+        <!--end answer button icon-->                                  
+    </td>
+
+    <!--spacer--><td rowspan="4"><div style="width: 5px;"></div></td><!--spacer-->
+
+
+
+
+
+<!--begin spacer--><td><div style="width: 150px;"></div></td><!--end spacer-->
+
+
+                            <td>
+
+
+                                <div id="divAns0">
+        <table>
+        <td>
+        <!--begin answer button icon-->            
+        <img 
+        id = "mainImage1"             
+        style="
+        zoom: 90%;
+        border-radius: 12px;                       
+        " 
+        src="img/sherbakov.jpg"
+        class="scale"
+        />
+        <!--end answer button icon-->   
+    </td>
+
+<!--begin spacer--><td><div style="width: 10px;"></div></td><!--end spacer-->
+
+    <td>
+
+                                    <!--begin answer button-->
+                                    <input 
+                                    type="button" 
+                                    id = "button0" 
+                                    onclick="button0clf()" 
+                                    title="" 
+                                    value="Щербаков Борис Валентинович"
+                                    style="
+                                    zoom: 100%;
+                                    border-radius: 20px;  
+                                    font-size: 36px;  
+                                    width: 600px;
+                                    height: 150px;
+                                    " 
+                                    class="scale"
+                                    > 
+                                    <!--end answer button-->
+
+                                </td>
+
+                                </table>
+
+                                </div>  
+                                
+                                
+
+
+
+                            </td>
+
+
+
+
+
+<tr>
+
+
+
+
+
+
+
+<!--begin spacer--><td><div style="width: 10px;"></div></td><!--end spacer-->
+
+    <td>
+        <div id="divAns1">
+
+            <table>
+                <td>
+                <!--begin answer button icon-->            
+                <img 
+                id = "mainImage2"             
+                style="
+                zoom: 33%;
+                border-radius: 25px;                       
+                " 
+                src="img/safronov.jpg"
+                class="scale"
+                />
+                <!--end answer button icon-->   
+            </td>
+
+            <!--begin spacer--><td><div style="width: 10px;"></div></td><!--end spacer-->
+
+<td>
+            <input 
+            type="button" 
+            id = "button1" 
+            onclick="button1clf()" 
+            title="" 
+            value="Никас Степанович Сафронов"
+            style="
+            zoom: 100%;
+            border-radius: 20px;  
+            font-size: 36px;  
+            width: 600px;
+            height: 150px;
+            " 
+            class="scale"
+            > 
+</td>
+</table>
+        </div>      
+
+                              
+
+    </td>
+
+
+
+
+<tr>
+
+
+
+
+
+
+<!--begin spacer--><td><div style="width: 10px;"></div></td><!--end spacer-->
+
+    <td>
+        <div id="divAns2">
+
+
+            <table>
+                <td>
+                <!--begin answer button icon-->            
+                <img 
+                id = "mainImage3"             
+                style="
+                zoom: 35%;
+                border-radius: 25px;                       
+                " 
+                src="img/ceretely.jpg"
+                class="scale"
+                />
+                <!--end answer button icon-->   
+            </td>
+            
+<!--begin spacer--><td><div style="width: 20px;"></div></td><!--end spacer-->
+<td>
+            <input 
+            type="button" 
+            id = "button2" 
+            onclick="button2clf()" 
+            title="" 
+            value="Зураб Константинович Церетели"
+            style="
+            zoom: 100%;
+            border-radius: 20px;  
+            font-size: 36px;  
+            width: 600px;
+            height: 150px;
+            " 
+            class="scale"
+            >   
+</td>
+</table>
+        </div>   
+
+
+
+
+
+
+    </td>
+
+    <tr>
+       
+        <td></td>
+
+    <td>
+        <div id="divAns3">
+
+
+            <table>
+                <td>
+                <!--begin answer button icon-->            
+                <img 
+                id = "mainImage4"             
+                style="
+                zoom: 16%;
+                border-radius: 50px;                       
+                " 
+                src="img/vasnetsov.jpg"
+                class="scale"
+                />
+                <!--end answer button icon-->   
+            </td>
+
+<!--begin spacer--><td><div style="width: 15px;"></div></td><!--end spacer-->
+
+<td>
+
+
+            <input 
+            type="button" 
+            id = "button3" 
+            onclick="button3clf()" 
+            title="" 
+            value="Виктор Михайлович Васнецов"
+            style="
+            zoom: 100%;
+            border-radius: 20px;  
+            font-size: 36px;  
+            width: 600px;
+            height: 150px;
+            " 
+            class="scale"
+            >   
+</td>
+</table>
+        </div>   
+
+
+
+                              
+
+
+    </td>
+    
+</table>
+    </div>
+
+
+    <div
+    style="
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    "
+    >
+        <input 
+        hidden
+        class="buttongl"
+        type="button" 
+        id="nextButton" 
+        value = "Далее"         
+        onclick="nextButtonclf()"
+        />
+    </div>
+
+    
+
+    
+</body>
+</html>
