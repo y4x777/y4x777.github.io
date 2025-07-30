@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>калькулятор лестницы</title>
+    <style>        
+        p {
+            font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+            font-style: normal; /* Курсивное начертание */
+            font-size: 30px;
+            color: rgb(146, 203, 253);
+        }        
+        .p0 {
+            font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+            font-style:normal; /* Курсивное начертание */
+            font-size: 20px;
+            color: rgb(146, 203, 253);
+        } 
+        .p1 {
+            font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+            font-style:normal;
+            font-size: 16px;
+            color: rgb(146, 203, 253);
+        } 
+    </style>
+</head>
+<body style="background-color:midnightblue">
+    <div>
+        <table>
+            <p>Задать параметры изделия:</p><br>
+            <td ><p class="p0">высота, мм:</p></td>
+            <td>    <input type="text" id="h" value="6000" onclick="clearhf()" size="4" style="font-size: 24px;"/>  </td>
+            <tr>
+            <td><p class="p0">ширина, мм</p></td>
+            <td>        <input type="text" id="w" value="350" onclick="clearwf()"  size="4" style="font-size: 24px;"/></td>
+            <tr>
+                <td><p class="p0">количество интервалов:</p></td>
+                <td>        <input type="text" id="steps" value="18" onclick="clearstepsf()" size="4" style="font-size: 24px;"/></td>
+                <tr>
+            <td><p class="p0">потребуется трубы, мм:</p></td>            
+            <td><input type="text" id="res" value="" onclick="clearresf()" size="4" style="font-size: 24px;"/></td>
+            <tr>
+                <td><p class="p0">высота шага, мм:</p></td>            
+                <td><input type="text" id="hstepres" value="" onclick="clearhstepresf()" size="4" style="font-size: 24px;"/></td>
+                <tr>
+                    <td><p class="p0">количество ступеней:</p></td>            
+                    <td><input type="text" id="ks" value="" onclick="clearksf()" size="4" style="font-size: 24px;"/></td>
+                    <tr>
+            <td><p class="p0"></p></td>            
+            <td><input type="button" id="bclacl" value="Рассчитать" onclick="bcalcclf()" style="font-size: 24px;"/></td>
+        </table>
+        
+
+    </div>
+    <div 
+    style=
+    "
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    border: 1;
+    background-color: darkblue;
+    ">
+        <canvas id="cnv" width="800" height="600">
+
+        </canvas>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
